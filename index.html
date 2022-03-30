@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <title>day 3</title>
+</head>
+<body>
+  <div class="container pb-5">
+    <h1 class="heading text-center mt-3 mb-4">Movies catalog</h1>
+    <div class="row">
+      <div class="col-4">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="type" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+          <input type="number" class="form-control" placeholder="typing" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <select class="form-select form-select-lg mb-3 fw-lighter" aria-label=".form-select-lg example">
+          <option selected>movies</option>
+          <option value="1">Avanger</option>
+          <option value="2">charli chaplin</option>
+          <option value="3">bin</option>
+        </select>
+        <select class="form-select form-select-lg mb-3 fw-lighter" aria-label=".form-select-lg example">
+          <option selected>Rating (High to low)</option>
+          <option value="1">like</option>
+          <option value="2">no</option>
+          <option value="3">nice</option>
+        </select>
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary" type="button">Search</button>
+        </div>
+        <h2 class="heading text-center mt-4 fs-1">Bookmarked movies</h2>
+        <div class="box border">
+          <div class="p-4">
+            <h4 class="heading">Avangers: Infinity War</h4>
+            <a href="#" class="btn btn-danger" role="button" data-bs-toggle="button">Remove<i class="bi bi-trash3-fill ps-2"></i></a>
+          </div>
+        </div>
+        <div class="box border rounded">
+          <div class="p-4">
+            <h4 class="heading">The Avengers</h4>
+            <a href="#" class="btn btn-danger" role="button" data-bs-toggle="button">Remove<i class="bi bi-trash3-fill ps-2"></i></a>
+          </div>
+        </div>
+        <div class="box border">
+          <div class="p-4">
+            <h4 class="heading">12 Years a Slave</h4>
+            <a href="#" class="btn btn-danger" role="button" data-bs-toggle="button">Remove<i class="bi bi-trash3-fill ps-2"></i> </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-8 ps-5">
+        <h3 class="m-0 p-0 pb-3">Search result: 3</h3>
+        <div class="alert alert-info" role="alert">
+          Use the form the left to search for a movie
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="card col-5.">
+            <img src="./imges/images.jfif" alt="img">
+            <h4 class="p-4 pb-0"><a class="text-decoration-none text-dark fs-4" href="#">Avengers: Infinity War</a></h4>
+            <a href="#" class="ps-4 fs-4 fw-bold text-decoration-none text-dark"><i class="bi bi-calendar2-fill"></i> 2018</a>
+            <a class="text-decoration-none text-dark fs-5 ps-4 pt-3 pb-4" href="#"><i class="bi bi-star-fill text-warning"></i> 8.7</a>
+            <div class="btn-toolbar m-auto pb-4" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group me-2" role="group" aria-label="First group">
+                <button type="button" class="btn border-primary border-2 ps-0"><i class="mx-1 bi bi-film"></i>Watch trailer</button>
+              </div>
+              <div class="btn-group me-2" role="group" aria-label="Second group">
+                <button type="button" class="btn border-info border-2 ps-0"><i class="px-1 bi bi-info-circle"></i>More info</button>
+              </div>
+              <div class="btn-group" role="group" aria-label="Third group">
+                <button type="button" class="btn border-success border-2 ps-0"><i class=" mx-1 bi bi-bookmark-fill"></i>Bookmark</button>
+              </div>
+            </div>
+          </div>
+          <div class="card col-2.">
+            <img src="./imges/images (1).jfif" alt="img">
+            <h4 class="p-4 pb-0 "><a class="text-decoration-none text-dark" href="#">The Avengers</a></h4>
+            <a href="#" class="ps-4 fs-5 fw-bold text-decoration-none text-dark"><i class="bi bi-calendar2-fill"></i> 2012</a>
+            <a class="text-decoration-none text-dark fs-5 ps-4 pt-3 pb-4" href="#"><i class="bi bi-star-fill text-warning"></i> 8.1</a>
+            <div class="btn-toolbar m-auto pb-4" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group me-2" role="group" aria-label="First group">
+                <button type="button" class="btn border-primary border-2  ps-0"><i class="mx-1 bi bi-film"></i>Watch trailer</button>
+              </div>
+              <div class="btn-group me-2" role="group" aria-label="Second group">
+                <button type="button" class="btn border-info border-2 ps-0"><i class="px-1 bi bi-info-circle"></i>More info</button>
+              </div>
+              <div class="btn-group" role="group" aria-label="Third group">
+                <button type="button" class="btn border-success border-2 ps-0"><i class=" mx-1 bi bi-bookmark-fill"></i> Bookmark</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-toolbar d-flex justify-content-center mt-5" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group me-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-primary text-light">1</button>
+            <button type="button" class="btn border text-primary ">2</button>
+            <button type="button" class="btn border text-primary ">3</button>
+            <button type="button" class="btn border text-primary ">4</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
